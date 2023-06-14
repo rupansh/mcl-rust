@@ -26,6 +26,7 @@ extern "C" {
     fn mclBn_pairing(z: *mut GT, x: *const G1, y: *const G2);
     fn mclBn_millerLoop(z: *mut GT, x: *const G1, y: *const G2);
     fn mclBn_finalExp(y: *mut GT, x: *const GT);
+    pub fn mclBn_setMapToMode(mode: i32) -> i32;
 
     // Fr
     fn mclBnFr_isEqual(x: *const Fr, y: *const Fr) -> i32;
